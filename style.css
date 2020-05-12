@@ -1,0 +1,16 @@
+/* background: rgb(238,174,202); gradient-effect  */
+
+.navigation-menu {
+    position: relative;
+    display: inline-block;
+}
+.nav-link, a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit; /* the above removes the default blue styling from the hyperlink */
+    display: none;
+    min-width: 160px; /* change this to relative units */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
