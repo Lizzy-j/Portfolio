@@ -9,7 +9,7 @@
     text-decoration: none;
     color: inherit; /* the above removes the default blue styling from the hyperlink */
     display: none;
-    min-width: 160px; /* change this to relative units */
+    max-width: 160px; /* change this to relative units */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     
