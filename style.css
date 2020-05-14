@@ -1,28 +1,73 @@
 /* background: rgb(238,174,202); gradient-effect  */
-.navigation-menu {
+/* .fas fa-stream {
     position: relative;
     display: block;
 }
 .nav-link-container {
-    
+    position: absolute; */
     /* display: none; */
-    max-width: 160px; /* change this to relative units */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* min-width: 40px; /* change this to relative units */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
-}
-
+} */ */
+/* 
 .nav-link {
     display: block;
     text-decoration: none;
     color: inherit; /* the above removes the default blue styling from the hyperlink */
-}
-
+    /* background-color: green;
+    color: white;
+} */ */
+/* 
 .nav-link a:hover {
     color: purple;
-}
+    display: block;
+} */
 
 /* Class to be added with JS */
-.display {
-    display: block;
+/* .display {display: block;} */
+
+
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
