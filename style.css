@@ -1,34 +1,3 @@
-/* background: rgb(238,174,202); gradient-effect  */
-/* .fas fa-stream {
-    position: relative;
-    display: block;
-}
-.nav-link-container {
-    position: absolute; */
-    /* display: none; */
-    /* min-width: 40px; /* change this to relative units */
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-} */ */
-/* 
-.nav-link {
-    display: block;
-    text-decoration: none;
-    color: inherit; /* the above removes the default blue styling from the hyperlink */
-    /* background-color: green;
-    color: white;
-} */ */
-/* 
-.nav-link a:hover {
-    color: purple;
-    display: block;
-} */
-
-/* Class to be added with JS */
-/* .display {display: block;} */
-
-
-
 .dropbtn {
     color: black;
     padding: 16px;
@@ -71,3 +40,68 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+
+* {
+  /* margin: 0px; */
+  padding: 0px; 
+  outline: none;
+  border: 0px;
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  border: 2px solid black;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.subtitle, .intro, .title {
+  max-width: 30rem;
+  margin: auto;
+}
+
+
+
+
+/* About */
+.about_me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 30%;
+  height: 30%;
+  display: block; 
+    /* why does centering only work with display block????? */
+  margin: 0 auto;
+}
+.about_me--text_container {
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 2em 2em 0 2em;
+}
+
+p .about_me--text {
+  margin-bottom: 2em;
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects--title{
+  flex-basis: 100%;
+}
+.project-card {
+  width: 45%;
+  border: 1px solid black;
+}
