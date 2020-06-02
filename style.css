@@ -141,7 +141,9 @@ ul {
 /* Mobile devices */
 @media only screen and (max-width: 400px) {
   .main-projects {
+    display: flex;
     flex-direction: column;
     width: 375px;
+    font-size: 10px;
   }
 }
