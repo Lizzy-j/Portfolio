@@ -5,26 +5,41 @@
   border: 0px;
 }
 .landing-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: auto;
+  /* display: flex;
+  flex-direction: column; */
+  text-align: left;
   border: 2px solid black;
-  height: 100vh;
-  top: 0;
-  left: 0;
   height: 100vh;
 }
 .landing-text__container {
-  max-width: 30rem;
-  margin: auto;
+  /* max-width: 50rem; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.landing-text__title {
+  font-size: 6em;
+  margin-bottom: -20px;
+}
+
+.landing-text__subtitle {
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+.landing-text__intro {
+  font-size: 1.5em;
 }
 
 .nav {
   margin-top: 20px;
+  margin-right: 4rem;
 }
 .nav-link {
   text-decoration: none;
+  float: right;
+  margin-right: 30px;
+  margin-top: 1rem;
 }
 
 /* About */
