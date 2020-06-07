@@ -56,7 +56,7 @@
 }
 
 p .about-me__text {
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 }
 
 /* Projects */
@@ -70,12 +70,12 @@ p .about-me__text {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+/* 
 .project-card {
   width: 35%;
   border: 1px solid black;
   margin: 0.25em;
-}
+} */
 
 .project--card__title,
 .project--card__subtitle,
