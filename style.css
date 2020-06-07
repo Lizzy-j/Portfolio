@@ -1,9 +1,3 @@
-*/ * {
-  /* margin: 0px; */
-  padding: 0px;
-  outline: none;
-  border: 0px;
-}
 .landing-container {
   /* display: flex;
   flex-direction: column; */
@@ -18,7 +12,7 @@
 }
 
 .landing-text__title {
-  font-size: 6em;
+  font-size: 5.7em;
   margin-bottom: -20px;
 }
 
@@ -48,36 +42,35 @@
   flex-direction: column;
   align-items: center;
 }
-img {
-  width: 30%;
-  height: 30%;
-  display: block;
-  /* why does centering only work with display block????? */
-  margin: 0 auto;
+
+.about-me__title,
+.projects--title {
+  font-size: 6em;
+  flex-basis: 100%;
 }
-.about_me--text_container {
-  line-height: 1.5em;
+.about_me-text__container {
+  /* line-height: 1.5em; */
   text-align: justify;
-  margin: 2em 2em 0 2em;
+  /* margin: 2em 2em 0 2em; */
+  margin-top: -5px;
 }
 
-p .about_me--text {
+p .about-me__text {
   margin-bottom: 2em;
 }
 
 /* Projects */
-
-.main-projects,
-.other-projects {
+.projects-container {
+  height: 100vh;
+  background-color: green;
+}
+.main-projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.projects--title {
-  flex-basis: 100%;
-}
 .project-card {
   width: 35%;
   border: 1px solid black;
@@ -96,17 +89,24 @@ ul {
   padding-right: 1.5em;
 }
 
-/* 
-.other-projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
 .project-index__card {
   border: 1px solid black;
   width: 350px;
   height: 250px;
   margin-right: 10px;
+}
+
+/* Contact */
+.contact-container {
+  height: 100vh;
+  background-color: yellow;
+}
+.contact--title {
+  font-size: 4em;
+}
+
+.contact--subtitle {
+  font-size: 3em;
 }
 
 /* Mobile devices */
