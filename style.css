@@ -1,74 +1,39 @@
-/* Styling for dropdown navbar */
-
-/* .dropbtn {
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-/* .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  } */
-
-/* The container <div> - needed to position the dropdown content */
-/* .dropdown {
-    position: relative;
-    display: inline-block;
-  } */
-
-/* Dropdown Content (Hidden by Default) */
-/* .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  } */
-
-/* Links inside the dropdown */
-/* .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  } */
-
-/* Change color of dropdown links on hover */
-/* .dropdown-content a:hover {background-color: #ddd} */
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-/* .show {display:block;} */
-*/ * {
-  /* margin: 0px; */
-  padding: 0px;
-  outline: none;
-  border: 0px;
-}
-.landing {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: auto;
+.landing-container {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: left;
   border: 2px solid black;
   height: 100vh;
-  top: 0;
-  left: 0;
 }
 .landing-text__container {
-  max-width: 30rem;
-  margin: auto;
+  /* max-width: 50rem; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.landing-text__title {
+  font-size: 5.7em;
+  margin-bottom: -20px;
+}
+
+.landing-text__subtitle {
+  font-size: 4em;
+  margin-bottom: -20px;
+}
+
+.landing-text__intro {
+  font-size: 1.5em;
 }
 
 .nav {
   margin-top: 20px;
+  margin-right: 4rem;
 }
 .nav-link {
   text-decoration: none;
-  border: 1px solid black;
+  float: right;
+  margin-right: 30px;
+  margin-top: 1rem;
 }
 
 /* About */
@@ -77,36 +42,35 @@
   flex-direction: column;
   align-items: center;
 }
-img {
-  width: 30%;
-  height: 30%;
-  display: block;
-  /* why does centering only work with display block????? */
-  margin: 0 auto;
+
+.about-me__title,
+.projects--title {
+  font-size: 6em;
+  flex-basis: 100%;
 }
-.about_me--text_container {
-  line-height: 1.5em;
+.about_me-text__container {
+  /* line-height: 1.5em; */
   text-align: justify;
-  margin: 2em 2em 0 2em;
+  /* margin: 2em 2em 0 2em; */
+  margin-top: -5px;
 }
 
-p .about_me--text {
+p .about-me__text {
   margin-bottom: 2em;
 }
 
 /* Projects */
-
-.main-projects,
-.other-projects {
+.projects-container {
+  height: 100vh;
+  background-color: green;
+}
+.main-projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.projects--title {
-  flex-basis: 100%;
-}
 .project-card {
   width: 35%;
   border: 1px solid black;
@@ -125,12 +89,6 @@ ul {
   padding-right: 1.5em;
 }
 
-/* 
-.other-projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
 .project-index__card {
   border: 1px solid black;
   width: 350px;
@@ -138,8 +96,30 @@ ul {
   margin-right: 10px;
 }
 
+/* Contact */
+.contact-container {
+  height: 100vh;
+  background-color: yellow;
+}
+.contact--title {
+  font-size: 4em;
+}
+
+.contact--subtitle {
+  font-size: 3em;
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 400px) {
+  .landing-text__title {
+    font-size: 1.5rem;
+  }
+
+  .landing-text__subtitle,
+  .landing-text__intro {
+    font-size: 0.85rem;
+  }
+
   .main-projects {
     display: flex;
     flex-direction: column;
