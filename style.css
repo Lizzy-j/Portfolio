@@ -8,8 +8,6 @@ body {
   margin: 0;
 }
 .landing-container {
-  /* display: flex;
-  flex-direction: column; */
   text-align: left;
   border: 2px solid black;
   height: 100vh;
@@ -50,6 +48,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .about-me__title,
@@ -58,10 +58,11 @@ body {
   margin-left: 25px;
   margin-top: 0px;
   margin-bottom: 10px;
+  text-align: left;
+  flex-grow: 3;
 }
 .about_me-text__container {
   text-align: justify;
-
   color: black;
   margin-bottom: 30px;
 }
@@ -76,19 +77,25 @@ body {
 
 /* Projects */
 .projects-container {
-  height: 100vh;
   background-color: green;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.prooject-card {
+.project-card {
   margin: 0 auto;
 }
+.projects--heading {
+  font-size: 36px;
+}
 
+.projects--role {
+  font-size: 30px;
+}
 .projects--text {
   max-width: 600px;
-  text-align: justify;
-  margin: 0 auto;
 }
 
 .project-img {
@@ -100,16 +107,17 @@ body {
 .contact-container {
   height: 100vh;
   background-color: yellow;
-  padding: 20px 15px 20px 15px;
 }
 .contact--title {
   font-size: 4em;
-  margin: 0 auto;
+  margin-left: 2rem;
+  margin-bottom: 0;
 }
 
 .contact--subtitle {
   font-size: 3em;
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 0;
 }
 
 /* Mobile devices */
