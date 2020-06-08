@@ -1,6 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
+  margin: 20 15;
+}
+
+body {
+  margin: 0;
 }
 .landing-container {
   /* display: flex;
@@ -50,18 +55,23 @@
 .about-me__title,
 .projects--title {
   font-size: 6em;
-  flex-basis: 100%;
-  margin-left: 30px;
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .about_me-text__container {
-  /* line-height: 1.5em; */
   text-align: justify;
-  /* margin: 2em 2em 0 2em; */
-  margin-top: -5px;
+
+  color: black;
+  margin-bottom: 30px;
 }
 
-p .about-me__text {
-  /* margin-bottom: 2em; */
+/* p .about-me__text, */
+.about_me-text__container {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.5em;
 }
 
 /* Projects */
@@ -70,50 +80,36 @@ p .about-me__text {
   background-color: green;
   margin-bottom: 0;
 }
-.main-projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* 
-.project-card {
-  width: 35%;
-  border: 1px solid black;
-  margin: 0.25em;
-} */
 
-.project--card__title,
-.project--card__subtitle,
-.project--card__desc {
-  padding: 0.45rem;
+.prooject-card {
+  margin: 0 auto;
 }
 
-.project-card li,
-ul {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+.projects--text {
+  max-width: 600px;
+  text-align: justify;
+  margin: 0 auto;
 }
 
-.project-index__card {
-  border: 1px solid black;
+.project-img {
   width: 350px;
-  height: 250px;
-  margin-right: 10px;
+  height: 200px;
 }
 
 /* Contact */
 .contact-container {
   height: 100vh;
   background-color: yellow;
-  margin-top: 0;
+  padding: 20px 15px 20px 15px;
 }
 .contact--title {
   font-size: 4em;
+  margin: 0 auto;
 }
 
 .contact--subtitle {
   font-size: 3em;
+  margin: 0 auto;
 }
 
 /* Mobile devices */
