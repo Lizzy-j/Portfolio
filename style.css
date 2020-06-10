@@ -13,7 +13,6 @@ body {
   height: 100vh;
 }
 .landing-text__container {
-  /* max-width: 50rem; */
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -138,21 +137,73 @@ footer a {
   color: inherit;
 }
 
+.contact--subtitle {
+  font-size: 1.25em;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+/* MEDIA QUERIES */
+
 /* Mobile devices */
 @media only screen and (max-width: 400px) {
+  .landing-text__container {
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    margin-top: 50%;
+  }
   .landing-text__title {
-    font-size: 1.5rem;
+    font-size: 2.23em;
   }
 
-  .landing-text__subtitle,
+  .landing-text__subtitle {
+    font-size: 1.7em;
+    margin-bottom: 0px;
+  }
   .landing-text__intro {
-    font-size: 0.85rem;
+    font-size: 0.9em;
+}
+
+  .about-me__title, .projects--title {
+    font-size: 3em;
+    margin-left: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    flex-grow: 3;
+}
+
+  .about_me-text__container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.8rem;
   }
 
-  .main-projects {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    font-size: 10px;
+  .projects--text {
+    font-size: 0.8em;
+  }
+
+  .project-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .projects--role {
+    font-size: 1.2em;
+    margin-top: 0.4em;
+  }
+  .contact__text-container {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 90px 0;
+  }
+  .contact--title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .contact--subtitle {
+    font-size: 1.25em;
+    margin-top: 0px;
+    padding-top: 0px;
   }
 }
+
+
