@@ -105,19 +105,37 @@ body {
 
 /* Contact */
 .contact-container {
-  height: 100vh;
+  height: 95vh;
   background-color: yellow;
 }
 .contact--title {
   font-size: 4em;
-  margin-left: 2rem;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
-
+.contact__text-container{
+  text-align: center;
+  margin-top: 100px;
+  padding: 90px 0;
+}
 .contact--subtitle {
   font-size: 3em;
-  text-align: center;
-  margin-top: 0;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/* footer */
+footer {
+  background-color: palegoldenrod;
+  height: 5vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer a {
+  margin-right: 1.5em;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Mobile devices */
