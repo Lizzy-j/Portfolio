@@ -16,20 +16,19 @@ body {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
-.landing-text__title {
+/* .landing-text__title {
   font-size: 5.7em;
   margin-bottom: -20px;
-}
+}  */
 
-.landing-text__subtitle {
+/* .landing-text__subtitle {
   font-size: 4em;
   margin-bottom: -20px;
-}
+} */
 
-.landing-text__intro {
+/* .landing-text__intro {
   font-size: 1.5em;
-}
+} */
 
 .nav {
   margin-top: 20px;
@@ -40,39 +39,46 @@ body {
   float: right;
   margin-right: 30px;
   margin-top: 1rem;
+} 
+
+.about-me__text, .projects--text{
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.5em;
 }
 
 /* About */
-.about_me {
+/* .about_me {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
 
-.about-me__title,
-.projects--title {
+/* .about-me__title,
+.projects--title, .expertise--title {
   font-size: 6em;
   margin-left: 25px;
   margin-top: 0px;
   margin-bottom: 10px;
   text-align: left;
   flex-grow: 3;
-}
-.about_me-text__container {
+} */
+/* .about_me-text__container {
   text-align: justify;
   color: black;
   margin-bottom: 30px;
-}
+} */
 
 /* p .about-me__text, */
-.about_me-text__container {
+/* .about_me-text__container {
   text-align: justify;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 1.5em;
-}
+} */
 
 /* Projects */
 .projects-container {
@@ -86,26 +92,39 @@ body {
 .project-card {
   margin: 0 auto;
 }
-.projects--heading {
+/* .projects--heading {
   font-size: 36px;
 }
 
 .projects--role {
   font-size: 30px;
-}
+} */
 .projects--text {
   max-width: 600px;
+  text-align: justify;
 }
 
-.project-img {
+/* .project-img {
   width: 350px;
   height: 200px;
+} */
+
+.expertise-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+.expertise--title {
+  flex-grow: 2;
+  width: 100%
+}
+.expertise--list-1, .expertise--list-2 li {
+  list-style-type: none;
+} 
 
 /* Contact */
 .contact-container {
   height: 95vh;
-  background-color: yellow;
 }
 .contact--title {
   font-size: 4em;
@@ -126,7 +145,6 @@ body {
 footer {
   background-color: palegoldenrod;
   height: 5vh;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -145,7 +163,7 @@ footer a {
 /* MEDIA QUERIES */
 
 /* Mobile devices */
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 320px) {
   .landing-text__container {
     margin-left: 0.7em;
     margin-right: 0.7em;
@@ -163,10 +181,18 @@ footer a {
     font-size: 0.9em;
 }
 
-  .about-me__title, .projects--title {
+  /* About */
+  .about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  .about-me__title, .projects--title, .expertise--title {
     font-size: 3em;
     margin-left: 18px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 10px;
     text-align: left;
     flex-grow: 3;
@@ -175,10 +201,9 @@ footer a {
   .about_me-text__container {
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 0.8rem;
   }
 
-  .projects--text {
+  .projects--text, .about-me__text {
     font-size: 0.8em;
   }
 
@@ -190,6 +215,14 @@ footer a {
     font-size: 1.2em;
     margin-top: 0.4em;
   }
+
+  .project-img {
+    display: none;
+  }
+  .expertise-container {
+    flex-direction: column;
+  }
+
   .contact__text-container {
     text-align: center;
     margin-top: 5rem;
@@ -206,4 +239,110 @@ footer a {
   }
 }
 
+@media only screen and (min-width: 500px){
+  .landing-text__container {
+    margin-top: 31%
+  }
+  
+  .project-img {
+    width: 350px;
+    height: 200px;
+    display: block;
+  }
 
+  .landing-text__title {
+    font-size: 2.33em;
+  }
+
+  .landing-text__subtitle {
+    font-size: 2.7em;
+    margin-bottom: 0px;
+  }
+  .landing-text__intro {
+    font-size: 1.5em;
+}
+}
+
+/* Tablet devices in landscape mode */
+@media only screen and (min-width: 768px) {
+  .landing-text__title {
+    font-size: 4em;
+  }
+
+  .landing-text__subtitle {
+    font-size: 2.75em;
+    margin-bottom: 0px;
+  }
+  .landing-text__intro {
+    font-size: 1.5em;
+  }
+
+  .landing-text__container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 16%;
+  }
+  about-me__title, .projects--title, .expertise--title {
+    font-size: 6em;
+  }
+
+  .projects--heading {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  .projects--role {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .projects--text, .about-me__text {
+    font-size: 1.5em;
+  }
+  .contact--title{
+    font-size: 3em;
+  }
+  .contact--subtitle{
+    font-size: 2em;
+  }
+}
+
+/* Desktop and large screens */
+@media only screen and (min-width: 1000px) {
+  .landing-text__title {
+    font-size: 5.7em;
+    margin-bottom: -20px;
+  }
+  .landing-text__container {
+    margin-top: 10%;
+  }
+  .landing-text__subtitle {
+    font-size: 4em;
+    margin-bottom: -20px;
+  }
+  .landing-text__intro {
+    font-size: 1.5em;
+  }
+
+  .about-me__title,
+  .projects--title, .expertise--title {
+  font-size: 6em;
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: left;
+  flex-grow: 3;
+  }
+
+  .about_me-text__container {
+    text-align: justify;
+    color: black;
+    margin-bottom: 30px;
+  }
+  .projects--heading {
+    font-size: 36px;
+  }
+  
+  .projects--role {
+    font-size: 30px;
+  }
+}
