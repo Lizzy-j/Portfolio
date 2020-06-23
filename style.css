@@ -1,16 +1,18 @@
 /* Root */
 :root{
   --landing-bg-color: linear-gradient(#F2709C, #FF9947);
-  --bio-bg-color: linear-gradient(to right, #E53935, #F2709C);
+  /* --bio-bg-color: linear-gradient(to right, #E53935, #F2709C); */
+  --bio-bg-color:#e8cbc0;
   --projects-bg-color: linear-gradient(to right, #DE6262, #FFB88C);
   --about-title-color: #334379;
-  --expertise-bg-color: linear-gradient(#FF9472, #FFAFBD);
+  /* --expertise-bg-color: linear-gradient(#FF9472, #FFAFBD); */
+  --expertise-bg-color: #DDD6F3;
   --contact-bg-color: linear-gradient(to right, #DDD6F3, #FAACA8)
 }
 
-* {
-  font-family: 'Karla', sans-serif;
-}
+/* * {
+  font-family:  sans-serif;
+} */
 
 .container {
   display: flex;
@@ -21,13 +23,40 @@
 body {
   margin: 0;
 }
+
+p {
+  font-family: sans-serif;
+}
 .landing-container {
   text-align: left;
   border: 2px solid black;
   height: 100vh;
-  background: var(--landing-bg-color);
+  /* background: var(--landing-bg-color); */
+  background: linear-gradient(178deg, #e8cbc0, #ffafbd, #636fa4);
+  background-size: 600% 600%;
 
+  -webkit-animation: AnimationName 19s ease infinite;
+  -moz-animation: AnimationName 19s ease infinite;
+  animation: AnimationName 19s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+}
+
+
 .landing-text__container {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -43,6 +72,7 @@ body {
   margin-right: 30px;
   margin-top: 1rem;
   color: white;
+  font-family: sans-serif;
 } 
 
 .about-me__text, .projects--text{
@@ -56,20 +86,29 @@ body {
   color: var(--about-title-color);
 }
 
+.about-me-text__container{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
 .about-me__container {
   background: var(--bio-bg-color);
+  
 }
 
 .about-me__text {
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 /* Projects */
 .projects-container {
   background: var(--projects-bg-color);
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* margin-bottom: 0;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .project-card {
@@ -77,17 +116,66 @@ body {
 }
 
 .projects--text {
-  max-width: 600px;
+  /* max-width: 600px; */
   text-align: justify;
 }
+/* PROJECTS CAROUSEL */
+/* .carousel {
+  background: #FAFAFA;
+
+  margin: 0 60px; /* space for prev/next buttons */
+/* }
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px; */
+  /* counter-increment: gallery-cell; */
+/* s
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+/* smaller, dark, rounded square */
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #333;
+}
+
+/* arrow color */
+/* .flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+} */
+/* position outside */
+/* .flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}  */
 
 .expertise-container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   background: var(--expertise-bg-color);
+  height: 100vh;
 }
-.expertise--title {
+.expertise--title, .contact--title {
   flex-grow: 2;
   width: 100%;
   -webkit-text-stroke: 3px #383775;
@@ -98,6 +186,8 @@ body {
 }
 .expertise--list-1, .expertise--list-2 li {
   list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  color:  #383775
 } 
 
 /* Contact */
@@ -122,7 +212,7 @@ body {
 
 /* footer */
 footer {
-  background-color: palegoldenrod;
+  background: var(--contact-bg-color);
   height: 5vh;
   display: flex;
   flex-direction: row;
@@ -132,6 +222,8 @@ footer a {
   margin-right: 1.5em;
   text-decoration: none;
   color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .contact--subtitle {
@@ -154,6 +246,7 @@ footer a {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: 3px white;
     -webkit-text-fill-color: transparent;
+    font-family: 'Arimo', sans-serif;
   }
 
   .landing-text__subtitle {
@@ -163,6 +256,7 @@ footer a {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: 3px white;
     -webkit-text-fill-color: transparent;
+    font-family: 'Arimo', sans-serif;
   }
   .landing-text__intro {
     font-size: 0.9em;
@@ -170,6 +264,7 @@ footer a {
     -webkit-text-stroke-width: 0.75px;
     -webkit-text-stroke-color: 0.5px white;
     -webkit-text-fill-color: transparent;
+    font-family: 'Arimo', sans-serif;
 }
 
   /* About */
@@ -188,6 +283,7 @@ footer a {
     text-align: left;
     flex-grow: 3;
     font-weight: 1000;
+    font-family: 'Arimo', sans-serif;
 }
 
 .projects--title {
@@ -218,10 +314,6 @@ footer a {
   .project-img {
     display: none;
   }
-  .expertise-container {
-    flex-direction: column;
-  }
-
   .contact__text-container {
     text-align: center;
     margin-top: 5rem;
@@ -230,11 +322,14 @@ footer a {
   .contact--title {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: 'Arimo', sans-serif;
   }
   .contact--subtitle {
     font-size: 1.25em;
     margin-top: 0px;
     padding-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #383775;
   }
 }
 
@@ -281,8 +376,12 @@ footer a {
     margin-right: 2rem;
     margin-top: 16%;
   }
-  about-me__title, .projects--title, .expertise--title {
+  about-me__title, .projects--title {
     font-size: 6em;
+  }
+
+  .expertise--title{
+    font-size: 4em;
   }
 
   .projects--heading {
@@ -296,12 +395,18 @@ footer a {
 
   .projects--text, .about-me__text {
     font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
   }
   .contact--title{
     font-size: 3em;
   }
   .contact--subtitle{
     font-size: 2em;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -324,7 +429,7 @@ footer a {
 
   .about-me__title,
   .projects--title, .expertise--title {
-  font-size: 6em;
+  font-size: 8em;
   margin-left: 25px;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -345,3 +450,4 @@ footer a {
     font-size: 30px;
   }
 }
+

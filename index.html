@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <script src="https://kit.fontawesome.com/b5dbcd8ac4.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/swiper.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carousel.css" />
     <title>Liz Jegede portfolio</title>
   </head>
   <body>
@@ -17,8 +19,8 @@
             <a href="#skills" class="nav-link">Contact</a>
           </nav>
         <div class="landing-text__container">
-          <h1 class="landing-text__title">Hi, I'm Liz Jegede</h1>
-          <h2 class="landing-text__subtitle">Full Stack Developer</h2>
+          <h1 class="landing-text__title animate__animated animate__fadeInLeft animate__slower">Hi, I'm Liz Jegede</h1>
+          <h2 class="landing-text__subtitle animate__animated animate__fadeInLeft animate__slower">Full Stack Developer</h2>
           <p class="landing-text__intro">Many theories concerning a self-sufficient reality may be found. But the
             characteristic theme of the works of Fellini is not narrative, as Sartre would
             have it, but subnarrative.</p>
@@ -40,27 +42,21 @@
             <p class="about-me__text"> Sed vitae diam id lectus blandit egestas. Praesent id metus varius, fringilla diam non, tincidunt magna. 
               Morbi hendrerit non nibh vitae venenatis. Sed fermentum lorem ac leo ultricies, tincidunt volutpat erat pulvinar. 
               In felis felis, scelerisque id hendrerit in, varius id risus. Etiam mollis nunc eu tortor rhoncus, ut elementum leo accumsan. 
-              Etiam neque felis, laoreet ac sagittis porttitor, ultrices vel odio. Etiam malesuada feugiat metus in accumsan. 
-              Aliquam feugiat nulla sit amet ex congue, at malesuada urna interdum. Nam at risus in libero vehicula vehicula. 
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-              Ut eget orci congue metus feugiat suscipit vel a lorem.</p>
+              Etiam neque felis, laoreet ac sagittis porttitor, ultrices vel odio.</p>
 
-            <p class="about-me__text">Phasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque. 
-              Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec posuere ante consectetur. 
-              Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor. </p>
-
+          
            </div>
         </section>
           
             
-      <!-- </section> -->
+
 
         <section class="projects-container" id="projects">
           <h2 class="projects--title">Projects</h2>
           <div class="project-card">
+        
               <h3 class="projects--heading">Criminal Appeals Fund</h3>
               <h3 class="projects--role">Dev Ops Lead and Developer</h3>
-              <img src="assets/placeholder-square.jpg" alt="placholder" class="project-img">
               <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
               Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec posuere
               ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>   
@@ -69,7 +65,6 @@
             <div class="project-card">
               <h3 class="projects--heading">Where's Whippy</h3>
               <h3 class="projects--role">UX/UI Lead and Developer</h3>
-              <img src="assets/placeholder-square.jpg" alt="placholder" class="project-img">
               <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
                 Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec
                 posuere
@@ -78,42 +73,43 @@
      
         </section>  
         <section class="expertise-container">
-          <h2 class="expertise--title">Expertise</h2>
-          <ul class="expertise--list-1">
-            <li>HTML5</li>
-            <li>React.js</li>
-            <li>Node.js and Express.js</li>
-            <li>PostgreSQL</li>
-            <li>Airtable</li>
-            <li>Netlify</li>
-            <li>Heroku</li>
-            <li>Google Maps</li>
-          </ul>
+          <h2 class="expertise--title">Skills</h2>
+          <div class="skills-container">
+            <ul class="expertise--list-1">
+              <li>HTML5</li>
+              <li>React.js</li>
+              <li>Node.js and Express.js</li>
+              <li>PostgreSQL</li>
+              <li>Airtable</li>
+              <li>Netlify</li>
+              <li>Heroku</li>
+              <li>Google Maps</li>
+            </ul>
 
-          <ul class="expertise--list-2">
-            <li>Figma</li>
-            <li>Github & Git</li>
-            <li>Postman</li>
-            <li>MongoDB</li>
-            <li>Content Design</li>
-          </ul>
+            <ul class="expertise--list-2">
+              <li>Figma</li>
+              <li>Github & Git</li>
+              <li>MongoDB</li>
+              <li>Content Design</li>
+            </ul>
+          </div>
         </section>
         <section class="contact-container" id="contact">
           <div class="contact__text-container">
             <h2 class="contact--title">Feel free to drop me a line at</h2>
             <h3 class="contact--subtitle">hello@lizjegede.dev</h3>
           </div>
-         
+        
         </section>
+        <footer>
+          <a href="https://github.com/Lizzy-j">Github </a>
+          <a href="https://www.linkedin.com/in/elizabeth-j-b7a072138/">  LinkedIn</a>
+          <a href="https://www.blahblah.com"> CV </a>
+      </footer>
     </main>
-    
-    <footer>
-      <!-- <div class="external-links"> -->
-        <a href="https://github.com/Lizzy-j">Github </a>
-        <a href="https://www.linkedin.com/in/elizabeth-j-b7a072138/">  LinkedIn</a>
-        <a href="https://www.blahblah.com"> CV </a>
-      <!-- </div> -->
-    </footer>
+   
+    <!-- <script src="script.js"></script> -->
     <script src="script.js"></script>
+    <script src="path/to/swiper.min.js"></script>
   </body>
 </html>
