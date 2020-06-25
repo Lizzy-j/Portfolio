@@ -1,19 +1,13 @@
 /* Root */
 :root{
-  --landing-bg-color: linear-gradient(#F2709C, #FF9947);
-  /* --bio-bg-color: linear-gradient(to right, #E53935, #F2709C); */
+  --landing-bg-color: linear-gradient(178deg, #e8cbc0, #ffafbd, #636fa4);
   --bio-bg-color:#e8cbc0;
-  --projects-bg-color: linear-gradient(to right, #DE6262, #FFB88C);
-  --about-title-color: #334379;
-  /* --expertise-bg-color: linear-gradient(#FF9472, #FFAFBD); */
+  --projects-bg-color: linear-gradient(to right,#CCB1EF, #FFB88C);
+  --primary-text-color: #334379;
+  --secondary-text-color: white;
   --expertise-bg-color: #DDD6F3;
   --contact-bg-color: linear-gradient(to right, #DDD6F3, #FAACA8)
 }
-
-/* * {
-  font-family:  sans-serif;
-} */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -31,8 +25,7 @@ p {
   text-align: left;
   border: 2px solid black;
   height: 100vh;
-  /* background: var(--landing-bg-color); */
-  background: linear-gradient(178deg, #e8cbc0, #ffafbd, #636fa4);
+  background: var(--landing-bg-color);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 19s ease infinite;
@@ -71,7 +64,7 @@ p {
   float: right;
   margin-right: 30px;
   margin-top: 1rem;
-  color: white;
+  color: var(--primary-text-color);
   font-family: sans-serif;
 } 
 
@@ -83,7 +76,8 @@ p {
 }
 
 .about-me__title {
-  color: var(--about-title-color);
+  color: var(--primary-text-color);
+  font-size: 2.1em;
 }
 
 .about-me-text__container{
@@ -93,22 +87,23 @@ p {
 
 .about-me__container {
   background: var(--bio-bg-color);
-  
+  height: 100vh;
 }
 
 .about-me__text {
-  color: white;
+  color: var(--primary-text-color);
   font-family: 'Montserrat', sans-serif;
 }
 /* Projects */
 .projects-container {
   background: var(--projects-bg-color);
-  /* margin-bottom: 0;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
-  color: white;
+  color: var(--secondary-text-color);
   font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+.projects--heading, .projects--role{
+  color: var(--primary-text-color)
 }
 
 .project-card {
@@ -116,62 +111,11 @@ p {
 }
 
 .projects--text {
-  /* max-width: 600px; */
   text-align: justify;
+  color: var(--primary-text-color);
 }
-/* PROJECTS CAROUSEL */
-/* .carousel {
-  background: #FAFAFA;
-
-  margin: 0 60px; /* space for prev/next buttons */
-/* }
-
-.carousel-cell {
-  width: 70%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px; */
-  /* counter-increment: gallery-cell; */
-/* s
-/* cell number */
-/* .carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
-
-/* smaller, dark, rounded square */
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background: #333;
-}
-
-/* arrow color */
-/* .flickity-prev-next-button .arrow {
-  fill: white;
-}
-.flickity-prev-next-button.no-svg {
-  color: white;
-} */
-/* position outside */
-/* .flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
-}  */
 
 .expertise-container {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
   background: var(--expertise-bg-color);
   height: 100vh;
 }
@@ -299,21 +243,17 @@ footer a {
   }
 
   .projects--text, .about-me__text {
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
   }
 
   .project-card {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  .projects--role {
+  /* .projects--role {
     font-size: 1.2em;
     margin-top: 0.4em;
-  }
-
-  .project-img {
-    display: none;
-  }
+  } */
   .contact__text-container {
     text-align: center;
     margin-top: 5rem;
@@ -383,18 +323,18 @@ footer a {
   .expertise--title{
     font-size: 4em;
   }
-
+/* 
   .projects--heading {
     font-size: 3em;
     margin-bottom: 0;
-  }
-  .projects--role {
+  } */
+  /* .projects--role {
     font-size: 2em;
     margin-top: 0;
-  }
+  } */
 
   .projects--text, .about-me__text {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-family: 'Montserrat', sans-serif;
   }
   .contact--title{
@@ -442,12 +382,12 @@ footer a {
     color: black;
     margin-bottom: 30px;
   }
-  .projects--heading {
+  /* .projects--heading {
     font-size: 36px;
-  }
+  } */
   
-  .projects--role {
+  /* .projects--role {
     font-size: 30px;
-  }
+  } */
 }
 

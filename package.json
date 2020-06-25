@@ -1,0 +1,22 @@
+{
+  "name": "lizjegede",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lizzy-j/portfolio.git"
+  },
+  "author": "Liz Jegede",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lizzy-j/lizjegede/issues"
+  },
+  "homepage": "https://github.com/Lizzy-j/lizjegede#readme",
+  "dependencies": {
+    "fullpage.js": "^3.0.8"
+  }
+}

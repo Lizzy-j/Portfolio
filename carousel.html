@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 
-<link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="carousel.css" />
 
 
     <title>Document</title>
@@ -15,12 +15,25 @@
 <body>
     <h1>Swiper Container</h1>
     <div class="swiper-container">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+                <a href="https://criminal-appeals-fund.netlify.app/" target="blank">
+                    <img src="assets/caf.png" class="swiper-slide-img" alt=""></div>
+                </a>
+                
+            <div class="swiper-slide">
+                <a href="https://where-is-whippy.netlify.app/" target="blank">
+                    <img src="assets/wheres-whippy.png" class="swiper-slide-img" alt="">
+                </a>
+                </div>
+            <div class="swiper-slide"><a href="https://mytindog.netlify.app/" target="blank"><img src="assets/tindog.png" class="swiper-slide-img" alt=""></a></div>
+
+            <div class="swiper-slide">
+                <a href="https://artattack.netlify.app/" target="blank">
+                <img src="assets/art-attack.png" class="swiper-slide-img" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">Slide 4</div>
             ...
         </div>
         <!-- If we need pagination -->
@@ -30,8 +43,6 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
 
     <script type="module">
@@ -44,10 +55,9 @@
       navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+        },
     });
-
-
+    
     </script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
