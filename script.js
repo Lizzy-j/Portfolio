@@ -1,18 +1,37 @@
-function myFunction(){
-    document.getElementById("navLinksContainer").classList.toggle("show")
-};
+var myFullPage = new fullpage('#fullpage', {
+	// fixedElements: '#dropdown',
+	// anchors:['about_me', 'projects', 'contact'],
+	// scrollOverflow: true,
+	scrollBar: true,
+	// verticalCentered: false,
+	//Accessibility
+	keyboardScrolling: true,
+	animateAnchor: true,
+	recordHistory: true,
 
-let menuBtn = document.querySelector("i");
+	//Design
+	controlArrows: true,
+});
 
-window.onclick = function(event) {
-    console.log("hi")
-    if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-}
+var mySwiper = new Swiper('.swiper-container', {
+	// pagination: {
+	//   el: '.swiper-pagination',
+	// },
+	navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+	  },
+  });
+
+
+//   let paragraph = document.getElementsByTagName("P")
+// // paragraph.addEventListener("mouseover", addAnimateClass)
+// paragraph.onmouseover = addAnimateClass;
+// function addAnimateClass(event){
+// 	if (event === 'onmouseover'){
+// 		paragraph.classList.add("shakeY")
+// 	} else {
+// 		paragraph.classList.remove("shakeY")
+// 	}
+// }
+
