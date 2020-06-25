@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" class="&#127880;">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
+    <meta name="description" content="Liz Jegede is a full-stack developer based in London, UK.">
+    <meta name="keywords" content="full-stack, developer, javascript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carousel.css" />
@@ -16,16 +19,18 @@
   />
 
     <link rel="stylesheet" href="path/to/swiper.min.css">
-
-    <title>Liz Jegede portfolio</title>
+    <meta property="og:title" content="Liz Jegede | Full Stack Developer">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/248/high-voltage_26a1.png">
+    
+    <title> Liz Jegede | Full Stack Developer</title>
   </head>
   <body>
     <main id="fullpage" class="container">
         <section class="landing-container section" id="landing">
           <nav class="dropdown">
-            <a href="#about_me" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#about_me" class="nav-link">About</a>
           </nav>
           <div class="landing-text__container">
             <h1 class="landing-text__title animate__animated animate__fadeInLeft">Hi, I'm Liz Jegede</h1>
@@ -36,19 +41,20 @@
         <section class="about-me__container section panel" id="about_me">
           <h2 class="about-me__title">About</h2>
             <div class="about-me-text__container">
-              <p class="about-me__text animate__animated"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                In non molestie magna, at congue arcu. Proin consequat mattis ex nec sollicitudin. 
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                Pellentesque eu turpis eget erat tempor viverra. Vivamus a dolor nec lectus aliquam suscipit.
-                Vestibulum ut placerat nibh, sit amet dignissim ligula. Maecenas id venenatis lectus, ut accumsan lacus. 
-                Nunc dapibus, mi vitae egestas feugiat, odio diam finibus quam, a mattis est velit ut metus.
-                Nullam erat dolor, laoreet id est vitae, consequat tristique diam. Nam malesuada gravida pellentesque. 
-                Quisque in vehicula sapien. Donec et orci tincidunt, molestie arcu ut, bibendum augue.</p>
+              
+              <p class="about-me__text animate__animated"> 
+                I have recently graduated from the Founders and Coders programme. Before moving into software development, I previously worked in Content Design and project management.
+                 Thanks to these experiences, I recognise the importance of developing tech that is accessible to all, irrespective of their backgrounds.
+                  Working for the parliamentary digital service gave me the opportunity to develop tools to ensure the general public is aware of what’s going politics-wise.
+                   After spending two years, I decided to take the plunge and embark on a career in programming.
+              </p>
   
-              <p class="about-me__text animate__animated"> Sed vitae diam id lectus blandit egestas. Praesent id metus varius, fringilla diam non, tincidunt magna. 
-                Morbi hendrerit non nibh vitae venenatis. Sed fermentum lorem ac leo ultricies, tincidunt volutpat erat pulvinar. 
-                In felis felis, scelerisque id hendrerit in, varius id risus. Etiam mollis nunc eu tortor rhoncus, ut elementum leo accumsan. 
-                Etiam neque felis, laoreet ac sagittis porttitor, ultrices vel odio.</p>
+              <p class="about-me__text animate__animated"> My university degree in Comparative Literature and French has given me the foundation for programming due to the level of literary and linguistics study required for a degree.
+                 Despite not being traditional for most developers, it has made me feel confident in picking up new skills and technologies quickly.</p>
+
+              <p class="about-me__text animate__animated">I’m looking forward to joining a team where I can use my user-centred design background and technical skills to make a difference.
+                 When I’m not tinkering away on my laptop, I enjoy attending meetups such as Codebar and Ladies of Code, or with my nose in a book.
+                 </p>
             </div>
         </section>
        
@@ -88,23 +94,26 @@
         </section> 
 
         
-        <section class="projects-container section">
+        <section class="projects-container other section">
           <div class="project-card">
             <h2 class="projects--heading">Main projects</h2>
               <h3 class="projects--heading">Criminal Appeals Fund</h3>
               <h3 class="projects--role">Dev Ops Lead and Developer</h3>
-              <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
-              Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec posuere
-              ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>   
+              <p class="projects--text">
+                As part of the Tech for Better programme organised by Founders and Coders, I worked in a team of 4 to develop a single-page web application for the Criminal Appeals Fund.
+                 The core aim of the platform was to provide legal professionals with a means to apply for funding in the criminal justice sector.
+                  The app was developed using React, Material UI and Style Components in the front-end.
+                   As Dev Ops lead, I was responsible for implementing serverless architecture into the project, deploying the app with Netlify lambda functions and setting up an Airtable database for the project’s backend.</p>   
           </div>
 
             <div class="project-card">
               <h3 class="projects--heading">Where's Whippy</h3>
               <h3 class="projects--role">UX/UI Lead and Developer</h3>
-              <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
-                Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec
-                posuere
-                ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>
+              <p class="projects--text">A single-page web application connecting local ice cream vendors with customers using the Google Maps API. 
+                The project is built with React and Styled Components in the front-end. 
+                Whilst the back-end was built with PostgreSQL Express.js. 
+                I was responsible for the implementation of the Google Maps API to render geolocation data of customers for vendors. 
+                As the UX lead, I led user testing and ensured the app met the accessibility guidelines outlined by W3C.</p>
             </div>
         </section>
         <section class="expertise-container section">
@@ -112,8 +121,9 @@
             <div class="skills-container">
               <ul class="expertise--list-1">
                 <li>HTML5</li>
+                <li>CSS3</li>
                 <li>React.js</li>
-                <li>Node.js and Express.js</li>
+                <li>Node.js</li>
                 <li>PostgreSQL</li>
                 <li>Airtable</li>
                 <li>Netlify</li>
@@ -122,10 +132,15 @@
               </ul>
   
               <ul class="expertise--list-2">
+                <li>Travis CI</li>
+                <li>Express.js</li>
+                <li>REST APIs</li>
                 <li>Figma</li>
-                <li>Github & Git</li>
+                <li>Version control(Github)</li>
                 <li>MongoDB</li>
                 <li>Content Design</li>
+                <li>Front-end</li>
+                <li>Back-end</li>
               </ul>
             </div>
         </section>
@@ -138,7 +153,7 @@
           <footer>
             <a href="https://github.com/Lizzy-j">Github </a>
             <a href="https://www.linkedin.com/in/elizabeth-j-b7a072138/">  LinkedIn</a>
-            <a href="https://www.blahblah.com"> CV </a>
+            <a href="LizJegedeCV.pdf" target="blank">CV</a>
           </footer>
         </section>
  

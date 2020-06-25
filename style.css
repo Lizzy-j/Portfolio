@@ -18,32 +18,27 @@ body {
   margin: 0;
 }
 
-p {
-  font-family: sans-serif;
-}
 .landing-container {
   text-align: left;
-  border: 2px solid black;
   height: 100vh;
   background: var(--landing-bg-color);
   background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 19s ease infinite;
-  -moz-animation: AnimationName 19s ease infinite;
-  animation: AnimationName 19s ease infinite;
+  -webkit-animation: GradientFade 19s ease infinite;
+  -moz-animation: GradientFade 19s ease infinite;
+  animation: GradientFade 19s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes GradientFade {
   0%{background-position:46% 0%}
   50%{background-position:55% 100%}
   100%{background-position:46% 0%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes GradientFade {
   0%{background-position:46% 0%}
   50%{background-position:55% 100%}
   100%{background-position:46% 0%}
 }
-@keyframes AnimationName {
+@keyframes GradientFade {
   0%{background-position:46% 0%}
   50%{background-position:55% 100%}
   100%{background-position:46% 0%}
@@ -56,23 +51,18 @@ p {
   
 }
 
-.nav {
-  margin-top: 20px;
-  margin-right: 4rem;
-}
 .nav-link {
   text-decoration: none;
   float: right;
   margin-right: 30px;
   margin-top: 1rem;
   color: var(--primary-text-color);
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 } 
 
 .about-me__text, .projects--text{
   text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 2rem 2rem 0;
   line-height: 1.5em;
 }
 
@@ -82,8 +72,7 @@ p {
 }
 
 .about-me-text__container{
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 0 2rem 0 2rem;
 }
 
 .about-me__container {
@@ -105,16 +94,17 @@ p {
   color: var(--secondary-text-color);
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
+  padding-bottom: 2em;
 }
+
 
 .projects--heading, .projects--role{
   color: var(--primary-text-color)
 }
 
-
-
 .project-card {
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif
 }
 
 .projects--text {
@@ -157,8 +147,6 @@ p {
 }
 .contact--subtitle {
   font-size: 3em;
-  margin-top: 0px;
-  padding-top: 0px;
 }
 
 /* footer */
@@ -179,17 +167,13 @@ footer a {
 
 .contact--subtitle {
   font-size: 1.25em;
-  margin-top: 0px;
-  padding-top: 0px;
 }
 /* MEDIA QUERIES */
 
 /* Mobile devices */
 @media only screen and (min-width: 320px) {
   .landing-text__container {
-    margin-left: 0.7em;
-    margin-right: 0.7em;
-    margin-top: 50%;
+    margin: 0 0.7em 0.7em;
   }
   .landing-text__title {
     font-size: 2.23em;
@@ -211,10 +195,7 @@ footer a {
   }
   .landing-text__intro {
     font-size: 0.9em;
-    -webkit-text-stroke: 0.75px #383775;
-    -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: 0.5px #383775;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-text-color);
     font-family: 'Arimo', sans-serif;
 }
 
@@ -228,9 +209,10 @@ footer a {
   }
   .about-me__title, .projects--title, .expertise--title {
     font-size: 3em;
-    margin-left: 18px;
+    margin: 5px 0 5px 18px;
+    /* margin-left: 18px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px; */
     text-align: left;
     flex-grow: 3;
     font-weight: 1000;
@@ -244,23 +226,17 @@ footer a {
     -webkit-text-fill-color: transparent;
 }
 
-  .about_me-text__container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  .about_me-text__container, .project-card {
+    margin: 0 1rem 0 1rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
   }
 
-  .projects--text, .about-me__text {
-    /* font-size: 0.8em; */
-  }
-
-  .project-card {
+  /* .project-card {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-  /* .projects--role {
-    font-size: 1.2em;
-    margin-top: 0.4em;
   } */
+
   .contact__text-container {
     text-align: center;
     margin-top: 5rem;
@@ -273,18 +249,13 @@ footer a {
   }
   .contact--subtitle {
     font-size: 1.25em;
-    margin-top: 0px;
-    padding-top: 0px;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     color:  var(--primary-text-color);
   }
 }
 
 @media only screen and (min-width: 500px){
-  .landing-text__container {
-    margin-top: 31%
-  }
-  
   .project-img {
     width: 350px;
     height: 200px;
@@ -319,9 +290,9 @@ footer a {
   }
 
   .landing-text__container {
+    margin: 1.5rem 2rem 0 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 16%;
   }
   about-me__title, .projects--title {
     font-size: 6em;
@@ -332,7 +303,6 @@ footer a {
   }
 
   .projects--text, .about-me__text {
-    /* font-size: 1.5em; */
     font-family: 'Montserrat', sans-serif;
   }
   .contact--title{
@@ -367,25 +337,15 @@ footer a {
 
   .about-me__title,
   .projects--title, .expertise--title {
-  font-size: 8em;
-  margin-left: 25px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  text-align: left;
-  flex-grow: 3;
+    font-size: 8em;
+    margin: 0 0 10px 25px;
+    text-align: left;
+    flex-grow: 3;
   }
 
   .about_me-text__container {
     text-align: justify;
-    color: black;
     margin-bottom: 30px;
   }
-  /* .projects--heading {
-    font-size: 36px;
-  } */
-  
-  /* .projects--role {
-    font-size: 30px;
-  } */
 }
 
