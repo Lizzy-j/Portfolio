@@ -71,15 +71,17 @@ body {
   font-size: 2.1em;
 }
 
-.about-me-text__container{
-  margin: 0 2rem 0 2rem;
+.about-me-text__container, .projects--text{
+  margin: 0 2.4rem 0 2.2rem;
 }
 
 .about-me__container {
   background: var(--bio-bg-color);
-  height: 100vh;
 }
 
+.about-me__container, .projects-container, .expertise-container {
+  height: 100vh;
+}
 .about-me__text {
   color: var(--primary-text-color);
   font-family: 'Montserrat', sans-serif;
@@ -93,7 +95,6 @@ body {
   background: var(--projects-bg-color);
   color: var(--secondary-text-color);
   font-family: 'Montserrat', sans-serif;
-  height: 100vh;
   padding-bottom: 2em;
 }
 
@@ -114,7 +115,6 @@ body {
 
 .expertise-container {
   background: var(--expertise-bg-color);
-  height: 100vh;
 }
 .expertise--title, .contact--title {
   flex-grow: 2;
@@ -173,7 +173,7 @@ footer a {
 /* Mobile devices */
 @media only screen and (min-width: 320px) {
   .landing-text__container {
-    margin: 0 0.7em 0.7em;
+    margin: 0 1em 0 3em;
   }
   .landing-text__title {
     font-size: 2.23em;
@@ -204,15 +204,11 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 0 10px
   }
   .about-me__title, .projects--title, .expertise--title {
     font-size: 3em;
     margin: 5px 0 5px 18px;
-    /* margin-left: 18px;
-    margin-top: 5px;
-    margin-bottom: 5px; */
     text-align: left;
     flex-grow: 3;
     font-weight: 1000;
@@ -228,14 +224,7 @@ footer a {
 
   .about_me-text__container, .project-card {
     margin: 0 1rem 0 1rem;
-    /* margin-left: 1rem;
-    margin-right: 1rem; */
   }
-
-  /* .project-card {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  } */
 
   .contact__text-container {
     text-align: center;
@@ -263,11 +252,11 @@ footer a {
   }
 
   .landing-text__title {
-    font-size: 2.33em;
+    font-size: 2.7em;
   }
 
   .landing-text__subtitle {
-    font-size: 2.7em;
+    font-size: 2.33em;
     margin-bottom: 0px;
   }
   .landing-text__intro {
@@ -291,8 +280,6 @@ footer a {
 
   .landing-text__container {
     margin: 1.5rem 2rem 0 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
   about-me__title, .projects--title {
     font-size: 6em;
