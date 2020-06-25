@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carousel.css" />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 
+
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+
     <title>Liz Jegede portfolio</title>
   </head>
   <body>
@@ -46,24 +52,59 @@
        
         <section class="projects-container section" id="projects">
             <h2 class="projects--title">Projects</h2>
-            <div class="project-card">
-              <h2 class="projects--heading">Main projects</h2>
-                <h3 class="projects--heading">Criminal Appeals Fund</h3>
-                <h3 class="projects--role">Dev Ops Lead and Developer</h3>
-                <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
-                Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec posuere
-                ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>   
-            </div>
-  
-              <div class="project-card">
-                <h3 class="projects--heading">Where's Whippy</h3>
-                <h3 class="projects--role">UX/UI Lead and Developer</h3>
-                <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
-                  Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec
-                  posuere
-                  ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <a href="https://criminal-appeals-fund.netlify.app/" target="blank">
+                          <img src="assets/caf.png" class="swiper-slide-img" alt=""></div>
+                      </a>
+                      
+                  <div class="swiper-slide">
+                      <a href="https://where-is-whippy.netlify.app/" target="blank">
+                          <img src="assets/wheres-whippy.png" class="swiper-slide-img" alt="">
+                      </a>
+                      </div>
+                  <div class="swiper-slide"><a href="https://mytindog.netlify.app/" target="blank"><img src="assets/tindog.png" class="swiper-slide-img" alt=""></a></div>
+      
+                  <div class="swiper-slide">
+                      <a href="https://artattack.netlify.app/" target="blank">
+                      <img src="assets/art-attack.png" class="swiper-slide-img" alt="">
+                      </a>
+                  </div>
+                  <div class="swiper-slide slide">Slide 4</div>
+                  ...
               </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+          
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          
+          </div>
+          
         </section> 
+
+        
+        <section class="projects-container section">
+          <div class="project-card">
+            <h2 class="projects--heading">Main projects</h2>
+              <h3 class="projects--heading">Criminal Appeals Fund</h3>
+              <h3 class="projects--role">Dev Ops Lead and Developer</h3>
+              <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
+              Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec posuere
+              ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>   
+          </div>
+
+            <div class="project-card">
+              <h3 class="projects--heading">Where's Whippy</h3>
+              <h3 class="projects--role">UX/UI Lead and Developer</h3>
+              <p class="projects--text">hasellus interdum lectus eu felis maximus luctus. Etiam nec porta neque.
+                Nulla diam ipsum, ullamcorper vitae mauris nec, porta efficitur massa.Aenean suscipit purus nec nunc varius, nec
+                posuere
+                ante consectetur. Etiam vulputate elementum dolor vitae condimentum. In tristique sapien at placerat auctor.</p>
+            </div>
+        </section>
         <section class="expertise-container section">
           <h2 class="expertise--title">Skills</h2>
             <div class="skills-container">
@@ -100,8 +141,14 @@
         </section>
  
     </main>
+    <script src="swiper.js"></script>
+        <script type="module">
+          import Swiper from 'https://unpkg.com/swiper/js/swiper.esm.browser.bundle.min.js';
+        </script>
     <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="fullpage.js"></script>   
+   <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
     <script src="script.js"></script>
   </body>
 </html>

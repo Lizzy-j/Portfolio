@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Lizzy-j/lizjegede#readme",
   "dependencies": {
-    "fullpage.js": "^3.0.8"
+    "fullpage.js": "^3.0.8",
+    "swiper": "^5.4.5"
   }
 }

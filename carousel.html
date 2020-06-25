@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
 
-
+    <link rel="stylesheet" href="path/to/swiper.min.css">
     <link rel="stylesheet" href="carousel.css" />
 
 
@@ -44,23 +44,15 @@
         <div class="swiper-button-next"></div>
     
     </div>
+    <script src="swiper.js"></script>
+    <!-- <script type="module"> -->
+        //   import Swiper from 'https://unpkg.com/swiper/js/swiper.esm.browser.bundle.min.js';
 
-    <script type="module">
-          import Swiper from 'https://unpkg.com/swiper/js/swiper.esm.browser.bundle.min.js';
 
-    var mySwiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-        },
-    });
+    <!-- </script> -->
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <!-- <script src="path/to/swiper.min.js"></script> -->
     
-    </script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
 </body>
 </html>

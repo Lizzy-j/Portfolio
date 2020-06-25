@@ -12,4 +12,15 @@ var myFullPage = new fullpage('#fullpage', {
 	//Design
 	controlArrows: true,
 });
+
+var mySwiper = new Swiper('.swiper-container', {
+	// pagination: {
+	//   el: '.swiper-pagination',
+	// },
+	navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+	  },
+  });
+  
 myFullPage();

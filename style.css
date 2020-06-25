@@ -102,9 +102,21 @@ p {
   height: 100vh;
 }
 
+
+/* .swiper-slide-img{
+  width: 50%;
+  
+}
+
+.fp-tableCell, .swiper-slide-img, {
+  height: 300px;
+} */
+
 .projects--heading, .projects--role{
   color: var(--primary-text-color)
 }
+
+
 
 .project-card {
   margin: 0 auto;
@@ -223,7 +235,7 @@ footer a {
     font-size: 3em;
     margin-left: 18px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: left;
     flex-grow: 3;
     font-weight: 1000;
