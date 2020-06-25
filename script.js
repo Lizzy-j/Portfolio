@@ -1,7 +1,7 @@
 var myFullPage = new fullpage('#fullpage', {
 	// fixedElements: '#dropdown',
 	// anchors:['about_me', 'projects', 'contact'],
-	scrollOverflow: true,
+	// scrollOverflow: true,
 	scrollBar: true,
 	// verticalCentered: false,
 	//Accessibility
@@ -22,5 +22,16 @@ var mySwiper = new Swiper('.swiper-container', {
 	prevEl: '.swiper-button-prev',
 	  },
   });
-  
-myFullPage();
+
+
+//   let paragraph = document.getElementsByTagName("P")
+// // paragraph.addEventListener("mouseover", addAnimateClass)
+// paragraph.onmouseover = addAnimateClass;
+// function addAnimateClass(event){
+// 	if (event === 'onmouseover'){
+// 		paragraph.classList.add("shakeY")
+// 	} else {
+// 		paragraph.classList.remove("shakeY")
+// 	}
+// }
+
