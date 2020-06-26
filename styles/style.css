@@ -16,10 +16,13 @@
 
 body {
   margin: 0;
+  
 }
 
 .landing-container {
   text-align: left;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: var(--landing-bg-color);
   background-size: 600% 600%;
