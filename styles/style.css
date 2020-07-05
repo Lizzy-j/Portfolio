@@ -102,7 +102,7 @@ body {
 }
 
 
-.projects--heading, .projects--role{
+.projects--heading-main, .projects--heading, .projects--role{
   color: var(--primary-text-color)
 }
 
@@ -136,7 +136,7 @@ body {
 
 /* Contact */
 .contact-container {
-  height: 95vh;
+  height: 100vh;
   background: var(--contact-bg-color);
 }
 .contact--title {
@@ -155,7 +155,6 @@ body {
 /* footer */
 footer {
   background: var(--contact-bg-color);
-  height: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -209,8 +208,13 @@ footer a {
     align-items: center;
     margin: 0 10px 0 10px
   }
+
+  .about-me-text__container, .projects--text {
+    font-size:0.45rem;
+  }
   .about-me__title, .projects--title, .expertise--title {
     font-size: 3em;
+    padding-top: 2.5rem;
     margin: 5px 0 5px 18px;
     text-align: left;
     flex-grow: 3;
@@ -225,8 +229,16 @@ footer a {
     -webkit-text-fill-color: transparent;
 }
 
+.projects--heading-main {
+  padding-top: 2.5rem
+}
+
   .about_me-text__container, .project-card {
     margin: 0 1rem 0 1rem;
+  }
+
+  .skills-container {
+    font-size: 0.55rem;
   }
 
   .contact__text-container {
@@ -235,7 +247,7 @@ footer a {
     padding: 90px 0;
   }
   .contact--title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 10px;
     font-family: 'Arimo', sans-serif;
   }
@@ -255,16 +267,24 @@ footer a {
   }
 
   .landing-text__title {
-    font-size: 2.7em;
+    font-size: 3.6rem;
   }
 
   .landing-text__subtitle {
-    font-size: 2.33em;
+    font-size: 2em;
     margin-bottom: 0px;
   }
   .landing-text__intro {
-    font-size: 1.5em;
-}
+    font-size: 1.2em;
+  } 
+
+  .about-me__title {
+    font-size: 4em;
+  }
+
+  .project-card, .about-me-text__container{
+    font-size: 0.59rem;
+  }
 }
 
 /* Tablet devices in landscape mode */
@@ -294,6 +314,7 @@ footer a {
 
   .projects--text, .about-me__text {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
   }
   .contact--title{
     font-size: 3em;
@@ -305,6 +326,7 @@ footer a {
   .skills-container {
     display: flex;
     flex-direction: row;
+    font-size: 1rem;
   }
 }
 

@@ -18,3 +18,12 @@ const components = [
 Swiper.use(components);
 
 //EXPORT
+
+// core version + navigation, pagination modules:
+import Swiper, { Navigaion, Pagination } from 'swiper';
+
+// configure Swiper to use modules
+Swiper.use([Navigaion, Pagination]);
+
+// init Swiper:
+const swiper = new Swiper(...);
