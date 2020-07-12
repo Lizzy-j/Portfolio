@@ -283,7 +283,7 @@ footer a {
   }
 
   .project-card, .about-me-text__container{
-    font-size: 0.59rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -314,7 +314,12 @@ footer a {
 
   .projects--text, .about-me__text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.75rem;
+  }
+  .projects--text {
+    font-size: 1rem;
+  }
+  .projects--role, .projects--heading, .projects--heading-main {
+    font-size: 1.2rem;
   }
   .contact--title{
     font-size: 3em;
