@@ -320,8 +320,9 @@ footer a {
     font-size: 4em;
   }
 
-  .projects--text, .about-me__text {
+  .projects--text, .about-me__text, .expertise--list-1, .expertise--list-2 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
   }
   .projects--text {
     font-size: 1rem;
