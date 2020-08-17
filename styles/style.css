@@ -1,8 +1,9 @@
 /* Root */
 :root{
-  --landing-bg-color: linear-gradient(178deg, #e8cbc0, #ffafbd, #636fa4);
-  --bio-bg-color:#e8cbc0;
-  --projects-bg-color: linear-gradient(to right,#CCB1EF, #FFB88C);
+  --landing-border-color: linear-gradient(180deg, #DDD6F3, #FAAACA);
+  --bg-color:white;
+  --heading-color: linear-gradient(to right,#7B4397, #FFAFBD);
+
   --primary-text-color: #334379;
   --secondary-text-color: white;
   --expertise-bg-color: #DDD6F3;
@@ -11,7 +12,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: 20 15;
+  /* margin: 0; */
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 .landing-container {
-  text-align: left;
+  /* text-align: left;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -28,10 +29,55 @@ body {
   background-size: 600% 600%;
   -webkit-animation: GradientFade 19s ease infinite;
   -moz-animation: GradientFade 19s ease infinite;
-  animation: GradientFade 19s ease infinite;
+  animation: GradientFade 19s ease infinite; */
+  width: 100vw;
+  height: 100vh;
+  border: 15px solid transparent;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 1rem 4rem 4rem 1rem;
+  display:flex;
+  justify-content: center;
 }
 
-@-webkit-keyframes GradientFade {
+.animated {
+  background-image:
+  linear-gradient(white, white),
+  linear-gradient(180deg, #DDD6F3, #FAAACA);
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 200%;
+  background-position: 0 0, 0 100%;
+  background-origin: padding-box, border-box;
+  animation: highlight 1s infinite alternate;
+}
+
+@keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+@-webkit-keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+@-moz-keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+.about-me__text{
+  margin: auto 6rem;
+  color: #3859CF;
+  font-family: sans-serif;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+/* @-webkit-keyframes GradientFade {
   0%{background-position:46% 0%}
   50%{background-position:55% 100%}
   100%{background-position:46% 0%}
@@ -45,80 +91,65 @@ body {
   0%{background-position:46% 0%}
   50%{background-position:55% 100%}
   100%{background-position:46% 0%}
-}
+} */
 
 
-.landing-text__container {
+/* .landing-text__container {
   margin-left: 2rem;
   margin-right: 2rem;
   
-}
+} */
 
-.nav-link {
-  text-decoration: none;
-  float: right;
-  margin-right: 30px;
-  margin-top: 1rem;
-  margin-bottom: 7rem;
-  color: var(--primary-text-color);
-  font-family: 'Montserrat', sans-serif;
-} 
-
-.about-me__text, .projects--text{
+.projects--text{
   text-align: justify;
   margin: 0 2rem 2rem 0;
   line-height: 1.5em;
 }
 
-.about-me__title {
-  color: var(--primary-text-color);
-  font-size: 2.1em;
-}
 
-.about-me-text__container, .projects--text{
-  margin: 0 2.4rem 0 2.2rem;
-}
 
-.about-me__container {
-  background: var(--bio-bg-color);
-}
-
-.about-me__container, .projects-container, .expertise-container {
+.projects-container, .expertise-container {
   height: 100vh;
 }
-.about-me__text {
-  color: var(--primary-text-color);
-  font-family: 'Montserrat', sans-serif;
-}
 
-.about-me__text:hover{
-  animation-name: jello;
-}
+
 /* Projects */
 .projects-container {
-  background: var(--projects-bg-color);
+  background: var(--bg-color);
   color: var(--secondary-text-color);
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 2em;
 }
 
-
-.projects--heading-main, .projects--heading, .projects--role{
-  color: var(--primary-text-color);
+h1[data-text] {
+  display:inline-block;
+  font-size:90px;
+  font-weight:bold;
+  font-family:arial;
+  position:relative;
+}
+h1[data-text]:before {
+  content:attr(data-text);
+  background: var(--heading-color);
+  -webkit-text-stroke: 5px transparent;    
+  -webkit-background-clip: text;
+  background-clip: text;
+  color:transparent;
+}
+h1[data-text]:after {
+  content:attr(data-text);
+  left:0;
+  top:0;
+  position:absolute;
+  background-image: linear-gradient(white, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.project-card {
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif
-}
-
-.projects--text {
-  text-align: justify;
-  color: var(--primary-text-color);
-}
 
 .expertise-container {
-  background: var(--expertise-bg-color);
+  background: var(bg-color);
 }
 .expertise--title, .contact--title {
   flex-grow: 2;
@@ -171,6 +202,8 @@ footer a {
 .contact--subtitle {
   font-size: 1.25em;
 }
+
+
 /* MEDIA QUERIES */
 
 /* Mobile devices */
@@ -178,42 +211,10 @@ footer a {
   .landing-text__container {
     margin: 2em 1em 0 3em;
   }
-  .landing-text__title {
-    font-size: 3em;
-    -webkit-text-stroke: 3px #383775;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: 3px #383775;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Arimo', sans-serif;
-  }
 
-  .landing-text__subtitle {
-    font-size: 1.9em;
-    margin-bottom: 0px;
-    -webkit-text-stroke: 3px #383775;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: 3px #383775;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Arimo', sans-serif;
-  }
-  .landing-text__intro {
-    font-size: 0.9em;
-    color: var(--primary-text-color);
-    font-family: 'Arimo', sans-serif;
-}
 
-  /* About */
-  .about_me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px 0 10px
-  }
 
-  .about-me-text__container, .projects--text {
-    font-size:0.58rem;
-  }
-  .about-me__title, .projects--title, .expertise--title {
+  .projects--title, .expertise--title {
     font-size: 3em;
     padding-top: 2.5rem;
     margin: 5px 0 5px 18px;
@@ -224,22 +225,13 @@ footer a {
 }
 
 .projects--title {
-  -webkit-text-stroke: 3px white;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: 3px white;
-    -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: 3px black;
+  -webkit-text-fill-color: transparent;
 }
 
-.projects--heading-main {
-  padding-top: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 2rem;
-}
 
-.projects--heading{
-  font-size: 1rem;
-}
 
   .about_me-text__container, .project-card {
     margin: 0 1rem 0 1rem;
@@ -274,21 +266,8 @@ footer a {
     display: block;
   }
 
-  .landing-text__title {
-    font-size: 3.6rem;
-  }
 
-  .landing-text__subtitle {
-    font-size: 2em;
-    margin-bottom: 0px;
-  }
-  .landing-text__intro {
-    font-size: 1.2em;
-  } 
 
-  .about-me__title {
-    font-size: 4em;
-  }
 
   .project-card, .about-me-text__container{
     font-size: 0.85rem;
@@ -297,22 +276,10 @@ footer a {
 
 /* Tablet devices in landscape mode */
 @media only screen and (min-width: 768px) {
-  .landing-text__title {
-    font-size: 4em;
-  }
 
-  .landing-text__subtitle {
-    font-size: 2.75em;
-    margin-bottom: 0px;
-  }
-  .landing-text__intro {
-    font-size: 1.5em;
-  }
 
-  .landing-text__container {
-    margin: 1.5rem 2rem 0 2rem;
-  }
-  about-me__title, .projects--title {
+
+  .projects--title {
     font-size: 6em;
   }
 
@@ -346,22 +313,7 @@ footer a {
 
 /* Desktop and large screens */
 @media only screen and (min-width: 1000px) {
-  .landing-text__title {
-    font-size: 5.7em;
-    margin-bottom: -20px;
-  }
-  .landing-text__container {
-    margin-top: 10%;
-  }
-  .landing-text__subtitle {
-    font-size: 4em;
-    margin-bottom: -20px;
-  }
-  .landing-text__intro {
-    font-size: 1.5em;
-  }
 
-  .about-me__title,
   .projects--title, .expertise--title {
     font-size: 8em;
     margin: 0 0 10px 25px;
@@ -371,7 +323,6 @@ footer a {
 
   .about_me-text__container {
     text-align: justify;
-    margin-bottom: 30px;
   }
 }
 
