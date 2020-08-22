@@ -3,6 +3,7 @@
   --landing-border-color: linear-gradient(180deg, #DDD6F3, #FAAACA);
   --bg-color:white;
   --heading-color: linear-gradient(to right,#7B4397, #FFAFBD);
+  --contact-button-color: linear-gradient(to right, #7B4397, #F2709C);
   --project-button-color: linear-gradient(to right, #FAACA8, #F2709C);
   --primary-text-color: #383775;
   --secondary-text-color: white;
@@ -72,20 +73,18 @@ body {
 .about-me__text{
   margin: auto 6rem;
   color: var(--primary-text-color);
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: justify;
   font-weight: lighter;
+  line-height: 2.5;
 }
 
-.projects-container, .expertise-container {
-  height: 100vh;
-}
 
 /* Projects */
 .projects-container {
   background: var(--bg-color);
   /* color: var(--secondary-text-color); */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-bottom: 2em;
   margin-right: 4rem;
   margin-left: 4rem;
@@ -95,7 +94,7 @@ h1[data-text] {
   display:inline-block;
   font-size:90px;
   font-weight:bold;
-  font-family:arial;
+  font-family: 'Roboto', sans-serif;
   position:relative;
   margin: 4rem 2rem;
 }
@@ -122,11 +121,17 @@ h1[data-text]:after {
   color: var(--primary-text-color);
 }
 
+.project-img{
+  width: 40%;
+  height: 15%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
 .project--container{
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 50px 80px;
-  
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
 }
 
 .project--link {
@@ -141,7 +146,7 @@ h1[data-text]:after {
   padding-bottom: 8px;
 }
 
-.projects--text{
+.project--text{
   text-align: justify;
   margin: 0 2rem 2rem 0;
   line-height: 1.5em;
@@ -151,34 +156,60 @@ h1[data-text]:after {
 /* Expertise */
 .expertise-container {
   background: var(bg-color);
+  /* height: 100vh; */
+  
 }
-.contact--title {
+
+.skills-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.skills-logo{
+  fill: #F2709C;
+}
+
+.expertise--title, .contact--title {
   flex-grow: 2;
   width: 100%;
-  -webkit-text-stroke: 3px #383775;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: 3px #383775;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto', sans-serif;
 
 }
-.expertise--list-1, .expertise--list-2 li {
+.contact--title {
+  /* flex-grow: 2; */
+  width: 100%;
+  color: var(--heading-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  justify-content: center;
+}
+.skills-list li {
   list-style-type: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color:  var(--primary-text-color);
+  margin-right: 10rem;
+  /* font-size: 1rem; */
+  fill: red;
+  text-align: center;
 } 
+
 
 /* Contact */
 .contact-container {
-  height: 100vh;
-  background: var(--contact-bg-color);
+  /* height: 50vh; */
+  background: var(--bg-color);
 }
 .contact--title {
   font-size: 4em;
-  margin-bottom: 10px;
+  background: linear-gradient(to right,#7B4397, #FFAFBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin: 0 auto;
 }
 .contact__text-container{
-  text-align: center;
-  margin-top: 100px;
+  /* text-align: center; */
+  /* margin-top: 100px; */
   padding: 90px 0;
 }
 .contact--subtitle {
@@ -187,142 +218,72 @@ h1[data-text]:after {
 
 /* footer */
 footer {
-  background: var(--contact-bg-color);
-  display: flex;
-  flex-direction: row;
+  background: var(--bg-color);
+  margin: 0 auto;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
 }
 footer a {
   margin-right: 1.5em;
   text-decoration: none;
   color: inherit;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color)
+  margin: 0 auto;
 }
 
 .contact--subtitle {
   font-size: 1.25em;
+  background: -webkit-linear-gradient(to right,#7B4397, #FFAFBD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  justify-content: center;
+}
+
+.contact-button {
+  background: var(--contact-button-color);
+  color: var(--bg-color);
+  border: 1px solid;
+  border-radius: 1rem;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
 }
 
 
 /* MEDIA QUERIES */
 
 /* Mobile devices */
-@media only screen and (min-width: 320px) {
-  .landing-text__container {
-    margin: 2em 1em 0 3em;
+@media screen and (max-width: 600px){
+  .about-me__text{
+    margin: auto 0.8rem;
+    line-height: 1.5;
   }
 
-
-
-  .projects--title, .expertise--title {
-    font-size: 3em;
-    padding-top: 2.5rem;
-    margin: 5px 0 5px 18px;
-    text-align: left;
-    flex-grow: 3;
-    font-weight: 1000;
-    font-family: 'Arimo', sans-serif;
-}
-
-.projects--title {
-  -webkit-text-stroke: 3px black;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: 3px black;
-  -webkit-text-fill-color: transparent;
-}
-
-
-
-  .about_me-text__container, .project-card {
-    margin: 0 1rem 0 1rem;
-  }
-
-  .skills-container {
-    font-size: 0.8rem;
-  }
-
-  .contact__text-container {
-    text-align: center;
-    margin-top: 5rem;
-    padding: 90px 0;
-  }
-  .contact--title {
-    font-size: 1.75rem;
-    margin-bottom: 10px;
-    font-family: 'Arimo', sans-serif;
-  }
-  .contact--subtitle {
-    font-size: 1.25em;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color:  var(--primary-text-color);
-  }
-}
-
-@media only screen and (min-width: 500px){
-  .project-img {
-    width: 350px;
-    height: 200px;
-    display: block;
-  }
-
-
-
-.about-me-text__container{
-    font-size: 0.85rem;
-  }
-}
-
-/* Tablet devices in landscape mode */
-@media only screen and (min-width: 768px) {
-
-
-
-  .projects--title {
-    font-size: 6em;
-  }
-
-  .expertise--title{
-    font-size: 4em;
-  }
-
-  .projects--text, .about-me__text, .expertise--list-1, .expertise--list-2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-  }
-  .projects--text {
-    font-size: 1rem;
-  }
-  .projects--role, .projects--heading, .projects--heading-main {
-    font-size: 1.2rem;
-  }
-  .contact--title{
-    font-size: 3em;
-  }
-  .contact--subtitle{
-    font-size: 2em;
-  }
-
-  .skills-container {
+  .project--container{
     display: flex;
-    flex-direction: row;
-    font-size: 1rem;
+    flex-direction: column;;
+    margin-bottom: 30px;
   }
+
+  .project-img{
+    width: 80%;
+    margin: 0 auto;
+      /* margin-right: 10%;
+      margin-bottom: 5%; */
+  }
+  .project--link{
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 300px){
+    .about-me__text{
+      margin: auto 2rem;
+      line-height: 1.5;
+    }
 }
 
-/* Desktop and large screens */
-@media only screen and (min-width: 1000px) {
-
-  .projects--title, .expertise--title {
-    font-size: 8em;
-    /* margin: 0 0 10px 25px; */
-    text-align: left;
-    flex-grow: 3;
-  }
-
-  .about_me-text__container {
-    text-align: justify;
-  }
-}
 

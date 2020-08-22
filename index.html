@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="icon" type="image/png" class="&#127880;">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="description" content="Liz Jegede is a full-stack developer based in London, UK.">
     <meta name="keywords" content="full-stack, developer, javascript, elizabeth jegede">
@@ -26,7 +26,7 @@
   </head>
   <body>
     <main class="container">
-      <section class="landing-container animated section"> 
+      <section class="landing-container animated"> 
         <div class="about-me__text">
           <h1>🌴😊📚💯</h1>
           <p>
@@ -37,10 +37,14 @@
             Maecenas sagittis pharetra metus ut hendrerit. Phasellus suscipit sapien sapien. Curabitur varius posuere lectus, eget sollicitudin libero sollicitudin non. Nullam auctor eros sed condimentum blandit. Curabitur nulla est, ultricies finibus pellentesque vel, ullamcorper nec lacus. Nullam vel tellus imperdiet, auctor leo et, pellentesque magna. Praesent ac congue ligula. 
       
           </p>
+          <p>
+            Maecenas sagittis pharetra metus ut hendrerit. Phasellus suscipit sapien sapien. Curabitur varius posuere lectus, eget sollicitudin libero sollicitudin non. Nullam auctor eros sed condimentum blandit. Curabitur nulla est, ultricies finibus pellentesque vel, ullamcorper nec lacus. Nullam vel tellus imperdiet, auctor leo et, pellentesque magna. Praesent ac congue ligula. 
+      
+          </p>
         </div>
       </section>
 
-      <section class="projects-container section" id="projects">
+      <section class="projects-container" id="projects">
         <h1 data-text="Projects"></h1>
         <div class="project--container">
           <img src="assets/abstract-list.png" alt="abstract list drawing" class="project-img"></img>
@@ -56,7 +60,7 @@
          
         </div>
         <div class="project--container">
-          <img src="assets/e-commerce-1.png" alt="abstract delivery map" class="project-img">
+          <img src="assets/e-commerce-1.png" alt="abstract delivery map" class="project-img"/>
           <div class="project-text--container">
             <h3 class="project--title">Developer + UX Lead, Where's Whippy</h3>
             <p class="project--text">A single-page web application connecting local ice cream vendors with customers using the Google Maps API. 
@@ -68,49 +72,118 @@
             <a href="https://where-is-whippy.netlify.app/" target="blank" class="project--link">View site</a>
             <a href="https://github.com/fac19/week11-where-is-whippy" target="blank" class="project--link">View code</a>
           </div>
-     
-        </div>
-      </section> 
-      <section class="expertise-container section">
-      <h1 data-text="Expertise"></h1>
-        <div class="skills-container">
-          <ul class="expertise--list-1">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>PostgreSQL</li>
-            <li>Airtable</li>
-            <li>Netlify</li>
-            <li>Heroku</li>
-            <li>Google Maps</li>
-          </ul>
-
-          <ul class="expertise--list-2">
-            <li>Travis CI</li>
-            <li>Express.js</li>
-            <li>REST APIs</li>
-            <li>Figma</li>
-            <li>Version control(Github)</li>
-            <li>MongoDB</li>
-            <li>Content Design</li>
-            <li>Front-end</li>
-            <li>Back-end</li>
-          </ul>
         </div>
       </section>
-
-      <section class="section contact-container" id="contact">
-        <div class="contact__text-container">
-          <h2 class="contact--title">Get in touch at</h2>
-          <h3 class="contact--subtitle">hello@lizjegede.dev</h3>
-        </div>
-        <footer>
-          <a href="https://github.com/Lizzy-j">Github </a>
-          <a href="https://www.linkedin.com/in/elizabeth-j-b7a072138/">  LinkedIn</a>
-          <a href="assets/Liz-Jegede-CV.pdf" target="blank">CV</a>
-        </footer>
+      <section class="expertise-container">
+        <h1 data-text="Skills"></h1>
+        <!-- <h2 class="expertise--title">Skills</h2> -->
+          <div class="skills-container">
+          
+            <!-- <img src="css.svg" /> -->
+            <ul class="skills-list">
+              <li>
+                <svg role="img" viewBox="0 0 25 25" class="skills-list-img">
+                  <use xlink:href="./logos.svg#html"></use>
+                </svg>
+                <p>HTML5</p>
+                </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#css"></use>
+                </svg>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#react"></use>
+                </svg>
+                <p>React.js</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#node"></use>
+                </svg>
+                <p>Node.js</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#postgresql"></use>
+                </svg>
+                <p>PostgreSQL</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#airtable"></use>
+                </svg>
+                <p>Airtable</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#netlify"></use>
+                </svg>
+                <p>Netlify</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#heroku"></use>
+                </svg>
+                <p>Heroku</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#jest"></use>
+                </svg>
+                <p>Jest</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#travis"></use>
+                </svg>
+                <p>Travis CI</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#express"></use>
+                </svg>
+                <p>Express.js</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#figma"></use>
+                </svg>
+                <p>Figma</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#github"></use>
+                </svg>
+                <p>Github</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#codecov"></use>
+                </svg>
+                <p>Codecov</p>
+              </li>
+              <li>
+                <svg role="img" viewBox="0 0 25 25">
+                  <use xlink:href="./logos.svg#styledcomponents"></use>
+                </svg>
+                <p>Styled Components</p>
+              </li>
+              <li>
+            </ul>
+          </div>
       </section>
+      <footer>
+        <h1 class="contact--title">I'd love to hear from you</h1>
+        <a class="contact-button">Send email</a>
+      </footer>
     </main>
+    
   </body>
 </html>
+
+
+
+     
