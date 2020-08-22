@@ -27,7 +27,7 @@ body {
   border: 15px solid transparent;
   box-sizing: border-box;
   font-size: 1em;
-  padding: 1rem 4rem 4rem 1rem;
+  padding: 1rem 6rem 4rem 6rem;
   display:flex;
   justify-content: center;
 }
@@ -61,6 +61,9 @@ body {
   }
 }
 
+.emojis{
+  font-size: 2rem;
+}
 .about-me__text{
   margin: auto 6rem;
   color: var(--primary-text-color);
@@ -68,8 +71,21 @@ body {
   text-align: justify;
   font-weight: lighter;
   line-height: 2.5;
+  font-size: 1.2rem;
+  /* font-weight: 700; */
 }
 
+.attention{
+  font-weight: bold;
+    font-style: normal;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    background: linear-gradient(180deg, transparent 62%, #ffd3c4 0) 50%/0 75% no-repeat;
+    background-size: 0px 75%;
+    background-size: 100% 100%;
+    display: inline;
+}
 
 /* Projects */
 .projects-container {
