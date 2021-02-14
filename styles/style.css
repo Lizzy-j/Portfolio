@@ -272,6 +272,8 @@ footer a {
     margin-left: 3rem
   }
   .skills-list{
+    /* applying margin-top to decrease the distance between the grid and the title */
+    margin-top: -25px; 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0;
@@ -284,12 +286,33 @@ footer a {
         ". ."
         ". ."
         ". .";
-}
-    /* applying margin-top to decrease the distance between the grid and the title */
-    margin-top: -25px; 
   }
-
 }
+
+  /* tablet devices */
+  /* ipad */
+  @media screen and (max-width:770px){
+    .animated{
+      /* setting the width to fix the cut-off border issue */
+      width: 53.5rem;
+    }
+
+    .about-me__text{
+      margin: auto 0;
+    }
+
+    .project-img{
+      margin-top: 5rem;
+    }
+
+    .projects-container{
+      margin-right: 0;
+    }
+    
+    .skills-list{
+      gap: 0;
+    }
+  }
 
   /* @media screen and (min-width: 300px){
     .about-me__text{
