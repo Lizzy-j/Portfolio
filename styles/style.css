@@ -268,7 +268,47 @@ footer a {
 
 /* MEDIA QUERIES */
 /* Mobile devices */
-  @media screen and (min-width: 300px){
+@media screen and (max-width: 400px){
+  .landing-container{
+    padding: 0;
+  }
+  .about-me__text{
+    margin: auto 1rem;
+    line-height:normal;
+    font-size: 1rem;
+  }
+  .projects-container{
+    margin-right: 1rem;
+    margin-left: -1rem;
+  }
+  .project-img{
+    width: 90%;
+  }
+  .project--container{
+    flex-direction: column;
+    margin-left: 3rem
+  }
+  .skills-list{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    grid-template-areas:
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        ". ."
+        ". .";
+}
+    /* applying margin-top to decrease the distance between the grid and the title */
+    margin-top: -25px; 
+  }
+
+}
+
+  /* @media screen and (min-width: 300px){
     .about-me__text{
       margin: auto 2rem;
       line-height: 1.5;
@@ -330,6 +370,6 @@ footer a {
       
         }
        
-}
+} */
 
 
