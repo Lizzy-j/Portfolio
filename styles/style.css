@@ -240,23 +240,6 @@ footer a {
   margin: 0 auto;
 }
 
-.contact--subtitle {
-  font-size: 1.25em;
-  background: -webkit-linear-gradient(to right,#7B4397, #FFAFBD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  justify-content: center;
-}
-
-.contact-button {
-  background: var(--contact-button-color);
-  color: var(--bg-color);
-  border: 1px solid;
-  border-radius: 1rem;
-  padding: 16px 30px 16px 30px;
-  text-align: center;
-}
-
 .contact--links{
   text-align: center;
   padding: 2rem 0;
