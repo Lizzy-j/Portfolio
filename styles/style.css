@@ -250,14 +250,76 @@ footer a {
 }
 
 /* MEDIA QUERIES */
+ /* tablet devices */
+  /* ipad */
+  @media screen and (max-width:770px){
+    .animated{
+      /* setting the width to fix the cut-off border issue */
+      width: 53.5rem;
+    }
+
+    .about-me__text{
+      margin: auto 0;
+    }
+
+    .project-img{
+      margin-top: 5rem;
+    }
+
+    .projects-container{
+      margin-right: 0;
+    }
+
+    .skills-list{
+      gap: 0;
+    }
+  }
+
+  @media screen and (max-width: 550px){
+    .about-me__text{
+      line-height: 1.5;
+    }
+
+    .project-img{
+      width: 95%;
+    }
+    .project--container{
+      margin-left: 6rem;
+      margin-top: -65px;
+      flex-direction: column;
+    }
+    .projects-container{
+      margin-right: -160px;
+    }
+  }
+
 /* Mobile devices */
+@media screen and (max-width: 420px){
+  .container{
+    width: fit-content;
+  }
+
+  .about-me__text{
+    line-height:normal;
+  }
+
+  .project--container{
+    margin-top: -120px;
+    margin-bottom: 85px;
+    margin-right: 8rem;
+    flex-direction: column;
+  }
+  .project-img{
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 400px){
   .landing-container{
     padding: 0;
   }
   .about-me__text{
     margin: auto 1rem;
-    line-height:normal;
     font-size: 1rem;
   }
   .projects-container{
@@ -288,31 +350,17 @@ footer a {
         ". .";
   }
 }
-
-  /* tablet devices */
-  /* ipad */
-  @media screen and (max-width:770px){
-    .animated{
-      /* setting the width to fix the cut-off border issue */
-      width: 53.5rem;
-    }
-
-    .about-me__text{
-      margin: auto 0;
-    }
-
-    .project-img{
-      margin-top: 5rem;
-    }
-
-    .projects-container{
-      margin-right: 0;
-    }
-    
-    .skills-list{
-      gap: 0;
-    }
+/* really small mobile devices, i guess? */
+@media screen and (max-width: 300px){
+  .about-me__text {
+    margin: auto 3rem;
   }
+  .projects-container {
+    margin-left: 3rem;
+  }
+}
+
+ 
 
   /* @media screen and (min-width: 300px){
     .about-me__text{
